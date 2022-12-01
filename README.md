@@ -57,3 +57,35 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```sh
 npm run lint
 ```
+
+# CapacitorJs
+
+Full information at [Docs](https://capacitorjs.com/docs)
+
+Short hints
+
+## Android Requirements
+
+Before you start, make sure that the environment is ready to work [Requirements from capacitor docs](https://capacitorjs.com/docs/getting-started/environment-setup#android-requirements)
+
+## The you can this commands
+
+Build vue app
+```
+npm run build
+```
+
+Sync vue app with android project
+```
+npx cap sync
+```
+
+And then run to open project in android studio
+```
+npx cap open android
+```
+
+OR you can use the following command which first runs sync, then it builds and deploys the native app to a target device of your choice.
+```
+npx cap run android
+```
